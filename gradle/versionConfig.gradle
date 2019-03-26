@@ -19,19 +19,20 @@ ext {
 //仓库设置
 def repo = [:]
 repo.localMaven = 'file:////Users/xujichang/develop/environment/maven/repository/local'
+ext.repo = repo
 
 //项目的基本配置
 def projectConf = [:]
 projectConf.minSdk = 16
 projectConf.targetSdk = 28
 projectConf.compileSdk = 28
-
+ext.projectConf = projectConf
 //gradle 插件
 def plugin = [:]
 plugin.gradle_bintray_plugin = '1.8.4'
 plugin.android_maven_gradle_plugin = '2.1'
 plugin.android_build_tools = 'gradle:3.4.0-rc02'
-
+ext.plugin = plugin
 //android 开发库
 def androidx = [:]
 androidx.test_runner = '1.1.1'
