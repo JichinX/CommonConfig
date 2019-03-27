@@ -102,3 +102,9 @@ amap.navi = "6.6.0_3dmap6.7.0"
 amap.search = "6.5.0"
 amap.location = "4.5.0"
 ext.amap = amap
+
+def jitpack = [:]
+jitpack.xutils='1.0.0'
+jitpack.xbase='1.0.3'
+jitpack.modules='1.0.4'
+ext.jitpack = jitpack
